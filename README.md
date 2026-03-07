@@ -74,13 +74,13 @@ The decryption key lives in the URL fragment (`#key`). Browsers never send fragm
 
 </div>
 
-All three at **Security Level 5** (highest tier). Classical AES-256 randomness combined with ML-KEM-1024 via HKDF-SHA3-256 — both must be broken simultaneously. Dual signatures mean if lattice math breaks, the hash layer holds.
+All three at **Security Level 5** (highest tier). Classical AES-256 randomness combined with ML-KEM-1024 via HKDF-SHA3-256 both must be broken simultaneously. Dual signatures mean if lattice math breaks, the hash layer holds.
 
 ---
 
 ## 🏗️ Architecture
 
-> **This is hybrid-decentralized.** The gateway is a central coordinator — it receives uploads, encrypts, distributes to nodes, and reassembles on download. It does not store data permanently. Nodes are the persistent storage layer holding only opaque encrypted blobs they cannot decrypt. If the gateway goes down, share links stop working until it returns. Node data is preserved.
+> **This is hybrid-decentralized.** The gateway is a central coordinator it receives uploads, encrypts, distributes to nodes, and reassembles on download. It does not store data permanently. Nodes are the persistent storage layer holding only opaque encrypted blobs they cannot decrypt. If the gateway goes down, share links stop working until it returns. Node data is preserved.
 
 ```
 crates/
@@ -132,5 +132,5 @@ cargo build --release -p oin-node
 <img src="https://img.shields.io/github/stars/VinavilDev/OpenImageNetwork?style=social" alt="stars" />
 <img src="https://img.shields.io/github/forks/VinavilDev/OpenImageNetwork?style=social" alt="forks" />
 <br/><br/>
-<sub>Built with Rust. Secured with math. Trusted by no one.</sub>
+<sub>Built with Rust. Secured with <3 and Sweat.</sub>
 </div>
